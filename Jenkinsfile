@@ -1,12 +1,20 @@
 pipeline {
     agent any
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> c870f801d433c38721c878da76107a083e286dc1
     stages {
         stage('Checkout') {
           steps {
             git branch: 'main', url: 'https://github.com/Kimayaahire/jenkins-ci-demo.git'
           }
+<<<<<<< HEAD
         }
+=======
+        }  
+>>>>>>> c870f801d433c38721c878da76107a083e286dc1
         stage('Build') {
             steps {
                 sh 'npm install'  // Example build command
@@ -24,4 +32,8 @@ pipeline {
             }
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c870f801d433c38721c878da76107a083e286dc1
